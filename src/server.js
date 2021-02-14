@@ -5,15 +5,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 import readline from 'readline';
 import fs from 'fs';
-import path from 'path';
 
-// create instances
 const app = express();
 const router = express.Router();
-
 const PORT = process.env.PORT || 3001;
 
-// configure the API to use bodyParser and look for JSON data in the request body
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -29,7 +25,7 @@ router.get('/test', (req, res) => {
   res.send('The weather api is working!');
 });
 
-// GET array of temperature objects for 10 days from csv file
+// GET an array of temperature objects for 10 days from csv file
 router.get('/temperatures', async (req, res) => {
   const rl = readline.createInterface({
     input: fs.createReadStream(`${process.env.LOCAL_PATH}/src/sydney-temperatures.csv`, 'utf8'),
