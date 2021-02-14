@@ -19,11 +19,11 @@ Clone the repo and install dependencies:
 
 ## Set up your environment variables:
 
-- Create a .env file in the root directory using the template below
+Create a .env file in the root directory using the template below
 
-PORT=3001
-CORS_ORIGIN=http://localhost:3000
-LOCAL_PATH=[enter your local path - you can find this by typing `pwd` in the terminal of the root directory]
+- PORT=3001
+- CORS_ORIGIN=http://localhost:3000
+- LOCAL_PATH=[enter your local path - you can find this by typing `pwd` in the terminal of the root directory]
 
 Launch app:
 
@@ -32,4 +32,4 @@ Launch app:
 
 ## Set up the frontend app:
 
-Set up the frontend app by following the README file here: https://github.com/franklia/coates-challenge-ui.git
+You can set up the frontend for this project by following the README file here: https://github.com/franklia/coates-challenge-ui.git
